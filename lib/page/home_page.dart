@@ -13,57 +13,97 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-            padding: EdgeInsets.only(top: MediaQuery
-                .of(context)
-                .size
-                .height * 0.05),
-            width: MediaQuery
-                .of(context)
-                .size
-                .width * 0.8,
-            child: const SingleChildScrollView(
-              child: Wrap(
-                runSpacing: 20,
-                children: <StylizedBlock>[
-                  StylizedBlock(text: "Text 1",
-                      blockColor: Colors.deepPurpleAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 2",
-                      blockColor: Colors.purple,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 3",
-                      blockColor: Colors.pinkAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 4",
-                      blockColor: Colors.pink,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 5",
-                      blockColor: Colors.blueAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 6",
-                      blockColor: Colors.redAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 7",
-                      blockColor: Colors.deepPurpleAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 8",
-                      blockColor: Colors.purple,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 10",
-                      blockColor: Colors.pinkAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 11",
-                      blockColor: Colors.pink,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 12",
-                      blockColor: Colors.blueAccent,
-                      textColor: Colors.white),
-                  StylizedBlock(text: "Text 13",
-                      blockColor: Colors.redAccent,
-                      textColor: Colors.white),
+            padding: const EdgeInsets.all(8),
+            width: (MediaQuery.of(context).size.width - 8),
+            child: const Column(
+              children: [
+                Expanded(
+                  flex: 4,
+                  child: Row(
+                    children: [
+                  Expanded(
+                    flex: 1,
+                    child: StylizedBlock(text: "Text 1",
+                        blockColor: Colors.grey,
+                        textColor: Colors.white),
+                  ),
+                  SizedBox(width: 8),
+                  Expanded(
+                    flex: 1,
+                    child: StylizedBlock(text: "Text 2",
+                        blockColor: Colors.green,
+                        textColor: Colors.white),
+                  ),
+                    ]
+                  ),
+                ),
+                SizedBox(height: 8),
+                Expanded(
+                  flex: 1,
+                  child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 3",
+                              blockColor: Colors.deepPurpleAccent,
+                              textColor: Colors.white),
+                        ),
+                        SizedBox(width: 8),
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 4",
+                              blockColor: Colors.deepOrange,
+                              textColor: Colors.white),
+                        ),
 
-                ],
-              ),
+                      ]
+                  ),
+                ),
+                SizedBox(height: 8),
+                Expanded(
+                  flex: 1,
+                  child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 5",
+                              blockColor: Colors.yellow,
+                              textColor: Colors.white),
+                        ),
+                        SizedBox(width: 8),
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 6",
+                              blockColor: Colors.brown,
+                              textColor: Colors.white),
+                        ),
+
+                      ]
+                  ),
+                ),
+                SizedBox(height: 8),
+                Expanded(
+                  flex: 4,
+                  child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 7",
+                              blockColor: Colors.black,
+                              textColor: Colors.white),
+                        ),
+                        SizedBox(width: 8),
+                        Expanded(
+                          flex: 1,
+                          child: StylizedBlock(text: "Text 8",
+                              blockColor: Colors.pinkAccent,
+                              textColor: Colors.white),
+                        ),
+
+                      ]
+                  ),
+                ),
+              ],
             )
         ),
       ),

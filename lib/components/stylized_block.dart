@@ -9,8 +9,6 @@ class StylizedBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: 140,
       decoration: BoxDecoration(
           color: blockColor,
           borderRadius: BorderRadius.circular(20)
